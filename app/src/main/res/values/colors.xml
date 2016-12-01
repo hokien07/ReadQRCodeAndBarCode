@@ -5,4 +5,12 @@
     <color name="colorAccent">#FF4081</color>
     <color name="text_color">#08ef74</color>
     <color name="background">#151514</color>
+
+    <!--MainActivity-->
+    <color name="btn_text_color">#0b0000</color>
+    <color name="btn_background_color">#338ff1</color>
+
+
+    <!--Fragment Dialog-->
+    <color name="backgoound_fragment">#f00</color>
 </resources>

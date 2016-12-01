@@ -1,3 +1,13 @@
 <resources>
     <string name="app_name">Read QR Code And Bar Code</string>
+
+    <!--MainActivity-->
+    <string name="btn_read_bar_code">Read Bar Code</string>
+    <string name="btn_read_wr_code">Read Qr code</string>
+    <string name="btn_create_qr_code">Your Qr Code</string>
+    <string name="btn_info">InforMation</string>
+
+    <!--Fragment_dialog-->
+    <string name="txt_info">some text save on Sqlite</string>
 </resources>
+
