@@ -1,24 +1,26 @@
 package com.app.vpgroup.readqrcodeandbarcode;
 
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.util.SparseArray;
 import android.view.SurfaceHolder;
 import android.view.SurfaceView;
+import android.view.View;
+import android.widget.Button;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.google.android.gms.vision.CameraSource;
 import com.google.android.gms.vision.Detector;
 import com.google.android.gms.vision.barcode.Barcode;
 import com.google.android.gms.vision.barcode.BarcodeDetector;
 
-import java.io.IOException;
-
 public class ReadBarCodeActivity extends AppCompatActivity {
 
     TextView barcodeInfo;
     SurfaceView cameraView;
     CameraSource cameraSource;
+    Button btnFindContent;
 
 
     @Override
@@ -35,11 +37,11 @@ public class ReadBarCodeActivity extends AppCompatActivity {
         cameraView.getHolder().addCallback(new SurfaceHolder.Callback() {
             @Override
             public void surfaceCreated(SurfaceHolder surfaceHolder) {
-                try {
-                    cameraSource.start(cameraView.getHolder());
-                } catch (IOException e) {
-                    e.printStackTrace();
-                }
+//                try {
+//                    cameraSource.start(cameraView.getHolder());
+//                } catch (IOException e) {
+//                    e.printStackTrace();
+//                }
 
             }
 
@@ -75,10 +77,19 @@ public class ReadBarCodeActivity extends AppCompatActivity {
                 }
             }
         });
+
+
+        btnFindContent.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Toast.makeText(ReadBarCodeActivity.this, "Thong tin san pham", Toast.LENGTH_SHORT).show();
+            }
+        });
     }
     private void AddControl(){
-        barcodeInfo = (TextView)findViewById(R.id.txtContent);
-        cameraView = (SurfaceView)findViewById(R.id.surfaceView);
+        barcodeInfo     = (TextView)findViewById(R.id.txtContent);
+        cameraView      = (SurfaceView)findViewById(R.id.surfaceView);
+        btnFindContent  = (Button) findViewById(R.id.btnFind);
     }
 
 }

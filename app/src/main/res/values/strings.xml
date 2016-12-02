@@ -8,6 +8,12 @@
     <string name="btn_info">InforMation</string>
 
     <!--Fragment_dialog-->
-    <string name="txt_info">some text save on Sqlite</string>
+    <string name="txt_info">- Nhấn chọn Qr Code nếu sản phẩm bạn muốn tìn là dạng Qr Code  <Code> "\n"</Code>
+                            - Nhấn chon Bả code nếu sản phẩm bạn muốn chon là bar Code <Code> "\n"</Code>
+                            - Ứng dụng chỉ có thể phân biệt được Nguồn gốc sản phẩm <Code> "\n"</Code>
+                            - Không thể phân biệt hàng giả, hàng thật <Code> "\n"</Code>
+                            - Nên nhập đủ thông tin khi cần tạo ra Mã QR code cho bạn <Code> "\n"</Code>
+                            - Ưng dụng chỉ tìm kiếm thông tin sản phẩm khi có Internet <Code> "\n"</Code>
+    </string>
 </resources>
 

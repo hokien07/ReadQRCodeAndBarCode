@@ -12,5 +12,6 @@
 
 
     <!--Fragment Dialog-->
-    <color name="backgoound_fragment">#f00</color>
+    <color name="text_fragment">#faf8f8</color>
+    <color name="bakcground_frangment">#0b0b0b</color>
 </resources>
